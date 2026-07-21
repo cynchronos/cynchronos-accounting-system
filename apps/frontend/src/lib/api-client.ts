@@ -1,5 +1,5 @@
 import { hc } from 'hono/client';
-import type { AppType } from '@cynchronos/backend';
+import type { AppType } from '@cas/backend';
 
 /**
  * Hono RPC Client

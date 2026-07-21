@@ -1,5 +1,5 @@
 {
-  "name": "@cynchronos/ui",
+  "name": "@cas/ui",
   "version": "0.0.0",
   "private": true,
   "type": "module",
@@ -17,7 +17,7 @@
     "react-dom": "^19.1.0"
   },
   "devDependencies": {
-    "@cynchronos/config": "workspace:*",
+    "@cas/config": "workspace:*",
     "@types/react": "^19.1.0",
     "@types/react-dom": "^19.1.0",
     "tailwindcss": "^4.1.0",

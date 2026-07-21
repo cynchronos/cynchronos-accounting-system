@@ -1,5 +1,5 @@
 {
-  "name": "@cynchronos/db",
+  "name": "@cas/db",
   "version": "0.0.0",
   "private": true,
   "type": "module",
@@ -21,7 +21,8 @@
     "postgres": "^3.4.5"
   },
   "devDependencies": {
-    "@cynchronos/config": "workspace:*",
+    "@cas/config": "workspace:*",
+    "@types/node": "^24.0.0",
     "drizzle-kit": "^0.31.0",
     "typescript": "^5.8.0"
   }

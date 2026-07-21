@@ -1,10 +1,10 @@
 {
-  "name": "@cynchronos/config",
+  "name": "@cas/config",
   "version": "0.0.0",
   "private": true,
   "exports": {
-    "./tsconfig/*": "./tsconfig/*.json",
-    "./eslint/*": "./eslint/*.js",
+    "./tsconfig/*": "./tsconfig/*",
+    "./eslint/*": "./eslint/*",
     "./prettier": "./prettier/index.js"
   }
 }

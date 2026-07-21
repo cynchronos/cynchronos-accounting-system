@@ -1,5 +1,5 @@
 {
-  "extends": "@cynchronos/config/tsconfig/library.json",
+  "extends": "@cas/config/tsconfig/library.json",
   "compilerOptions": {
     "rootDir": "./src",
     "outDir": "./dist"

@@ -20,10 +20,10 @@ importers:
 
   apps/backend:
     dependencies:
-      '@cynchronos/db':
+      '@cas/db':
         specifier: workspace:*
         version: link:../../packages/db
-      '@cynchronos/validations':
+      '@cas/validations':
         specifier: workspace:*
         version: link:../../packages/validations
       '@hono/zod-validator':
@@ -36,7 +36,7 @@ importers:
         specifier: ^3.25.0
         version: 3.25.76
     devDependencies:
-      '@cynchronos/config':
+      '@cas/config':
         specifier: workspace:*
         version: link:../../packages/config
       '@types/bun':
@@ -46,18 +46,24 @@ importers:
         specifier: ^5.8.0
         version: 5.9.3
 
+  apps/e2e:
+    devDependencies:
+      '@cas/config':
+        specifier: workspace:*
+        version: link:../../packages/config
+
   apps/frontend:
     dependencies:
-      '@cynchronos/backend':
+      '@cas/backend':
         specifier: workspace:*
         version: link:../backend
-      '@cynchronos/db':
+      '@cas/db':
         specifier: workspace:*
         version: link:../../packages/db
-      '@cynchronos/ui':
+      '@cas/ui':
         specifier: workspace:*
         version: link:../../packages/ui
-      '@cynchronos/validations':
+      '@cas/validations':
         specifier: workspace:*
         version: link:../../packages/validations
       '@hookform/resolvers':
@@ -88,7 +94,7 @@ importers:
         specifier: ^5.0.0
         version: 5.0.14(@types/react@19.2.14)(react@19.2.3)
     devDependencies:
-      '@cynchronos/config':
+      '@cas/config':
         specifier: workspace:*
         version: link:../../packages/config
       '@tailwindcss/postcss':
@@ -127,9 +133,12 @@ importers:
         specifier: ^3.4.5
         version: 3.4.9
     devDependencies:
-      '@cynchronos/config':
+      '@cas/config':
         specifier: workspace:*
         version: link:../config
+      '@types/node':
+        specifier: ^24.0.0
+        version: 24.11.0
       drizzle-kit:
         specifier: ^0.31.0
         version: 0.31.10
@@ -146,7 +155,7 @@ importers:
         specifier: ^19.1.0
         version: 19.2.3(react@19.2.3)
     devDependencies:
-      '@cynchronos/config':
+      '@cas/config':
         specifier: workspace:*
         version: link:../config
       '@types/react':
@@ -168,7 +177,7 @@ importers:
         specifier: ^3.25.0
         version: 3.25.76
     devDependencies:
-      '@cynchronos/config':
+      '@cas/config':
         specifier: workspace:*
         version: link:../config
       typescript:
@@ -1179,6 +1188,9 @@ packages:
 
   '@types/node@20.19.35':
     resolution: {integrity: sha512-Uarfe6J91b9HAUXxjvSOdiO2UPOKLm07Q1oh0JHxoZ1y8HoqxDAu3gVrsrOHeiio0kSsoVBt4wFrKOm0dKxVPQ==}
+
+  '@types/node@24.11.0':
+    resolution: {integrity: sha512-fPxQqz4VTgPI/IQ+lj9r0h+fDR66bzoeMGHp8ASee+32OSGIkeASsoZuJixsQoVef1QJbeubcPBxKk22QVoWdw==}
 
   '@types/react-dom@19.2.3':
     resolution: {integrity: sha512-jp2L/eY6fn+KgVVQAOqYItbF0VY/YApe5Mz2F0aykSO8gx31bYCZyvSeYxCHKvzHG5eZjc+zyaS5BrBWya2+kQ==}
@@ -2701,6 +2713,9 @@ packages:
   undici-types@6.21.0:
     resolution: {integrity: sha512-iwDZqg0QAGrg9Rav5H4n0M64c3mkR59cJ6wQp+7C4nI0gsmExaedaYLNO44eT4AtBBwjbTiGPMlt2Md0T9H9JQ==}
 
+  undici-types@7.16.0:
+    resolution: {integrity: sha512-Zz+aZWSj8LE6zoxD+xrjh4VfkIG8Ya6LvYkZqtUQGJPZjYl53ypCaUwWqo7eI0x66KBGeRo+mlBEkMSeSZ38Nw==}
+
   unrs-resolver@1.11.1:
     resolution: {integrity: sha512-bSjt9pjaEBnNiGgc9rUiHGKv5l4/TGzDmYw3RhnkJGtLhbnnA/5qJj7x3dNDCRx/PJxu774LlH8lCOlB4hEfKg==}
 
@@ -3480,6 +3495,10 @@ snapshots:
   '@types/node@20.19.35':
     dependencies:
       undici-types: 6.21.0
+
+  '@types/node@24.11.0':
+    dependencies:
+      undici-types: 7.16.0
 
   '@types/react-dom@19.2.3(@types/react@19.2.14)':
     dependencies:
@@ -5208,6 +5227,8 @@ snapshots:
       which-boxed-primitive: 1.1.1
 
   undici-types@6.21.0: {}
+
+  undici-types@7.16.0: {}
 
   unrs-resolver@1.11.1:
     dependencies:

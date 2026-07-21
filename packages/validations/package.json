@@ -1,5 +1,5 @@
 {
-  "name": "@cynchronos/validations",
+  "name": "@cas/validations",
   "version": "0.0.0",
   "private": true,
   "type": "module",
@@ -15,7 +15,7 @@
     "zod": "^3.25.0"
   },
   "devDependencies": {
-    "@cynchronos/config": "workspace:*",
+    "@cas/config": "workspace:*",
     "typescript": "^5.8.0"
   }
 }
