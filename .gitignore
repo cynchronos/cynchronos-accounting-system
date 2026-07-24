@@ -44,3 +44,6 @@ coverage/
 
 # Global PRD
 ARCHITECTURE.md
+
+# Anti Zip
+*.zip
